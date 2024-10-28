@@ -1,27 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encrypt & Decrypt Text</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Encrypt & Decrypt Text</h1>
-        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
 
-        <input type="number" id="shift" min="1" max="25" placeholder="Shift Value (1-25)">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encrypt & Decrypt Text</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-        <div class="buttons">
-            <button onclick="encryptText()">Encrypt</button>
-            <button onclick="decryptText()">Decrypt</button>
+    <body>
+        <div class="container">
+            <h1>Encrypt & Decrypt Text</h1>
+            <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+
+            <input type="number" id="shift" min="1" max="25" placeholder="Shift Value (1-25)">
+
+            <div class="buttons">
+                <button onclick="encryptText()">Encrypt</button>
+                <button onclick="decryptText()">Decrypt</button>
+            </div>
+
+            <textarea id="outputText" placeholder="Result will appear here..." readonly></textarea>
+
+            <h5>&copy; 2024 TongIT. All Rights Reserved.</h5>
         </div>
 
-        <textarea id="outputText" placeholder="Result will appear here..." readonly></textarea>
-    </div>
+        <script src="script.js"></script>
+    </body>
 
-    <script src="script.js"></script>
-</body>
 </html>
