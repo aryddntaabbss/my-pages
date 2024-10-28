@@ -1,3 +1,4 @@
+/* Reset dan font default */
 * {
   margin: 0;
   padding: 0;
@@ -5,27 +6,30 @@
   font-family: Arial, sans-serif;
 }
 
+/* Styling body */
 body {
   background-color: #f0f0f6;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
 }
 
+/* Container utama */
 .container {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 500px;
-  height: 470px;
   text-align: center;
 }
 
+/* Textarea */
 textarea {
   width: 100%;
-  height: 100px;
+  height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -35,6 +39,7 @@ textarea {
   font-size: 15px;
 }
 
+/* Input number */
 input[type="number"] {
   width: 100%;
   padding: 8px;
@@ -44,12 +49,14 @@ input[type="number"] {
   font-size: 15px;
 }
 
+/* Header */
 header h1 {
   font-size: 36px;
   margin-bottom: 10px;
   color: #007bff;
 }
 
+/* Daftar anggota */
 .members ul {
   list-style-type: none;
   padding: 10px 0;
@@ -60,14 +67,14 @@ header h1 {
   margin: 8px 0;
 }
 
+/* Tombol */
 .buttons {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.buttons button,
-.back-button button {
+button {
   width: 48%;
   padding: 10px;
   background-color: #007bff;
@@ -79,19 +86,18 @@ header h1 {
   font-size: 15px;
 }
 
-.buttons button,
-.back-button button {
+button:hover {
   background-color: #0056b3;
 }
 
-.button {
+/* Tombol move and back
+.buttons-move-back {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.button button,
-.back-button button {
+buttons-move-back {
   width: 48%;
   padding: 10px;
   background-color: #007bff;
@@ -103,7 +109,32 @@ header h1 {
   font-size: 15px;
 }
 
-.button button,
-.back-button button {
+buttons-move-back:hover {
   background-color: #0056b3;
+} */
+
+/* Footer */
+footer p,
+h5 {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
