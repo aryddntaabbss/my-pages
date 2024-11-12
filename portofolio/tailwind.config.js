@@ -1,0 +1,11 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,js}",
+  ],
+  darkMode: 'class', // Mengaktifkan dark mode berbasis class
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
